@@ -56,7 +56,7 @@ public class Cont
         if (suma > 0)
         {
             if (suma > balanta)
-                Console.WriteLine("Nu aveti suficiente fonduri.");
+                Console.WriteLine("Fonduri insuficiente.");
             else
             {
                 balanta -= suma;
