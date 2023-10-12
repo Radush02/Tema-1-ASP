@@ -46,7 +46,8 @@ namespace Lab2_24.Controllers
         [HttpDelete("{id}")]
         public List<Student> DeleteByID(int id)
         {
-            students.RemoveAt(id);
+            var studentID = students.FindIndex(x => x.Id == id);
+            students.RemoveAt(studentID);
             return students;
         }
         [HttpGet("ordered")]
