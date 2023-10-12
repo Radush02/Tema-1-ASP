@@ -35,7 +35,7 @@ namespace Lab2_24.Controllers
         }
 
 
-        [HttpDelete("delete")]
+        [HttpDelete("{name}")]
         public List<Student> Delete(Student student)
         {
             var studentIndex = students.FindIndex( x => x.Id == student.Id);
